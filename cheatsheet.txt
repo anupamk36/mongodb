@@ -6,24 +6,33 @@ I will assume that you are working inside a collection named 'comments' on a Mon
 1. Database Commands
 View all databases
 show dbs
+
 Create a new or switch databases 
 use dbName
+
 View current Database
 db
+
 Delete Database 
 db.dropDatabase()
+
 2. Collection Commands
 Show Collections
 show collections
+
 Create a collection named 'comments'
 db.createCollection('comments')
+
 Drop a collection named 'comments'
 db.comments.drop()
+
 3. Row(Document) Commands
 Show all Rows in a Collection 
 db.comments.find()
+
 Show all Rows in a Collection (Prettified)
 db.comments.find().pretty()
+
 Find the first row matching the object
 db.comments.findOne({name: 'Harry'})
 Insert One Row
